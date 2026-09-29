@@ -229,7 +229,7 @@
 
     function App() {
       const [activeTab, setActiveTab] = useState('home');
-      const [inputQuery, setInputQuery] = useState('');
+      const [inputQuery, setInputQuery] = useState('정부가 다음 달부터 모든 국민에게 50만 원을 지급한다는 뉴스가 사실인가요?');
       const [toastMsg, setToastMsg] = useState('');
       const [isAnalyzing, setIsAnalyzing] = useState(false);
       const [analysisStep, setAnalysisStep] = useState('');
@@ -331,7 +331,7 @@
                     <textarea
                       value={inputQuery}
                       onChange={(e) => setInputQuery(e.target.value)}
-                      placeholder="검증할 뉴스 기사 제목, URL 또는 루머 텍스트를 입력하세요..."
+                      placeholder={"검증할 뉴스 기사 제목, URL 또는 루머 텍스트를 입력하세요...\n\n예시: ‘정부가 다음 달부터 모든 국민에게 50만 원을 지급한다’는 뉴스가 사실인가요?"}
                       className="w-full h-32 bg-transparent text-xs text-slate-200 placeholder-slate-500 focus:outline-none resize-none leading-relaxed font-sans"
                     />
 
